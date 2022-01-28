@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.box{
+    background: white;
+    width: 250px;
+    padding: 2px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1.2rem;
+    color: black;
+}
+h1{
+    display: flex;
+    font-size: 30px;
+    color: white;
+}
+
+#notes-info{
+    width: 100%;
+    justify-content: flex-start;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding: 10px 0;
+}
+.input-section{
+    background-color: black;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    /*padding: 20px 0;*/
+}
+.title{
+    text-align: center;
+    margin: 10px 0;
+    padding: 7px 0 ;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.text-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    height: 120px;
+}
+.add-note{
+    min-width: 12%;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    transition: ease 0.7s;
+    border-radius: 5px;
+    background: white;
+}
+.add-note:hover{
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 3px white;
+}
+.display-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    min-height: 15vh;
+    width: 70%;
+    flex-direction: column;
+}
+.notes-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    color: #0c0b0b;
+    border-bottom: 2px solid black;
+}
+.notes{
+    align-self: flex-start;
+    text-align: justify-all;
+    padding: 10px;
+    display: flex;
+    flex-basis: 80%;
+    margin: 20px 5px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.modify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+    height: 100%;
+}
+.delete-note, .edit{
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 7px 0;
+    padding: 8px;
+    background: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.delete-note:hover, .edit:hover{
+    box-shadow: 0 0 1px 3px white;
+}
+.edit-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.edit-area{
+    display: flex;
+    margin: 5px 0;
+    width: 70%;
+    height: 120px;
+    flex-basis: 80%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    color: black;
+    background: white;
+}
+.finish{
+    padding: 7px 0;
+    display: flex;
+    border-radius: 7px;
+    flex-basis: 20%;
+    width: 10%;
+    justify-content: center;
+    background: white;
+    color: black;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.7s ease;
+}
+.finish:hover{
+    box-shadow: 0 0 1px 3px white;
+    cursor: pointer;
+}
+.off{
+    display: none;
+}
+.on{
+    display: flex;
+}
+.delete-all{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.delete-all-btn{
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 13%;
+    margin: 7px 0;
+    padding: 8px;
+    background: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.delete-all-btn:hover{
+    box-shadow: 0 0 1px 3px white;
+}
